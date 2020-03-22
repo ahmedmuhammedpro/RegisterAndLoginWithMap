@@ -7,13 +7,11 @@
 @implementation RegisterViewController {
     NSMutableArray *images;
     NSMutableData *myData;
+    NSString *selectedImage;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle: @"done" style: UIBarButtonItemStylePlain target: self action: @selector(doDone)];
-    [self.navigationItem setRightBarButtonItem: doneButton];
     
     _imageTable.dataSource = self;
     _imageTable.delegate = self;
@@ -27,6 +25,7 @@
     [images addObject: @"grandfather.png"];
     
     myData = [NSMutableData new];
+    selectedImage = [images objectAtIndex: 0];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -48,13 +47,13 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    selectedImage = [images objectAtIndex: indexPath.row];
+}
+
 - (void)setLatitude:(float)lat andLognitude :(float)lon {
     self.latitude = lat;
     self.longitude = lon;
-}
-
-- (void) doDone {
-    //http://jets.iti.gov //.eg/FriendsApp/services/user/register?name=yourName&phone=yourPhone&a ge=YourAge&imageURL=yourImageURL&longitude=yourLongitude&latitude=yourLatitude
 }
 
 - (IBAction)openMap:(UIButton *)sender {
@@ -72,7 +71,7 @@
     str = [str stringByAppendingString: @"&age="];
     str = [str stringByAppendingString: _ageTF.text];
     str = [str stringByAppendingString: @"&imageURL="];
-    str = [str stringByAppendingString: [images objectAtIndex: 1]];
+    str = [str stringByAppendingString: selectedImage];
     str = [str stringByAppendingString: @"&lognitude="];
     str = [str stringByAppendingFormat: @"%f", _longitude];
     str = [str stringByAppendingString: @"&latitude="];

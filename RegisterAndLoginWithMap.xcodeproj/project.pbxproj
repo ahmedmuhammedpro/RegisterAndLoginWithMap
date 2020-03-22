@@ -16,6 +16,7 @@
 		C809CF462427775D003D02B4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF452427775D003D02B4 /* RegisterViewController.m */; };
 		C809CF4A24278894003D02B4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF4924278894003D02B4 /* MapViewController.m */; };
 		C809CF4D24278D11003D02B4 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF4C24278D11003D02B4 /* MyAnnotation.m */; };
+		C809CF502427AF18003D02B4 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF4F2427AF18003D02B4 /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		C809CF4924278894003D02B4 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		C809CF4B24278D11003D02B4 /* MyAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
 		C809CF4C24278D11003D02B4 /* MyAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		C809CF4E2427AF18003D02B4 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		C809CF4F2427AF18003D02B4 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				C809CF4B24278D11003D02B4 /* MyAnnotation.h */,
 				C809CF4C24278D11003D02B4 /* MyAnnotation.m */,
 				C809CF47242784BC003D02B4 /* LatAndLonProtocol.h */,
+				C809CF4E2427AF18003D02B4 /* DetailsViewController.h */,
+				C809CF4F2427AF18003D02B4 /* DetailsViewController.m */,
 			);
 			path = RegisterAndLoginWithMap;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				C809CF2D24276F2F003D02B4 /* AppDelegate.m in Sources */,
 				C809CF4D24278D11003D02B4 /* MyAnnotation.m in Sources */,
 				C809CF4A24278894003D02B4 /* MapViewController.m in Sources */,
+				C809CF502427AF18003D02B4 /* DetailsViewController.m in Sources */,
 				C809CF3E24276F36003D02B4 /* main.m in Sources */,
 				C809CF462427775D003D02B4 /* RegisterViewController.m in Sources */,
 			);

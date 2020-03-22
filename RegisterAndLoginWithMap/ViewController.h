@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 #import "RegisterViewController.h"
+#import "DetailsViewController.h"
 
 @interface ViewController : UIViewController <NSURLConnectionDelegate, NSURLConnectionDataDelegate, UIAlertViewDelegate>
 
