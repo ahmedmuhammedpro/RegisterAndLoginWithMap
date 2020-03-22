@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C809CF2D24276F2F003D02B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF2C24276F2F003D02B4 /* AppDelegate.m */; };
-		C809CF3024276F2F003D02B4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF2F24276F2F003D02B4 /* SceneDelegate.m */; };
 		C809CF3324276F2F003D02B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF3224276F2F003D02B4 /* ViewController.m */; };
 		C809CF3624276F2F003D02B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C809CF3424276F2F003D02B4 /* Main.storyboard */; };
 		C809CF3824276F36003D02B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C809CF3724276F36003D02B4 /* Assets.xcassets */; };
 		C809CF3B24276F36003D02B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C809CF3924276F36003D02B4 /* LaunchScreen.storyboard */; };
 		C809CF3E24276F36003D02B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF3D24276F36003D02B4 /* main.m */; };
+		C809CF462427775D003D02B4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF452427775D003D02B4 /* RegisterViewController.m */; };
+		C809CF4A24278894003D02B4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF4924278894003D02B4 /* MapViewController.m */; };
+		C809CF4D24278D11003D02B4 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C809CF4C24278D11003D02B4 /* MyAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C809CF2824276F2F003D02B4 /* RegisterAndLoginWithMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisterAndLoginWithMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C809CF2B24276F2F003D02B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C809CF2C24276F2F003D02B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C809CF2E24276F2F003D02B4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C809CF2F24276F2F003D02B4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C809CF3124276F2F003D02B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C809CF3224276F2F003D02B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C809CF3524276F2F003D02B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +29,13 @@
 		C809CF3A24276F36003D02B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C809CF3C24276F36003D02B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C809CF3D24276F36003D02B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C809CF442427775D003D02B4 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		C809CF452427775D003D02B4 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		C809CF47242784BC003D02B4 /* LatAndLonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LatAndLonProtocol.h; sourceTree = "<group>"; };
+		C809CF4824278894003D02B4 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C809CF4924278894003D02B4 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		C809CF4B24278D11003D02B4 /* MyAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		C809CF4C24278D11003D02B4 /* MyAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +70,20 @@
 			children = (
 				C809CF2B24276F2F003D02B4 /* AppDelegate.h */,
 				C809CF2C24276F2F003D02B4 /* AppDelegate.m */,
-				C809CF2E24276F2F003D02B4 /* SceneDelegate.h */,
-				C809CF2F24276F2F003D02B4 /* SceneDelegate.m */,
-				C809CF3124276F2F003D02B4 /* ViewController.h */,
-				C809CF3224276F2F003D02B4 /* ViewController.m */,
 				C809CF3424276F2F003D02B4 /* Main.storyboard */,
 				C809CF3724276F36003D02B4 /* Assets.xcassets */,
 				C809CF3924276F36003D02B4 /* LaunchScreen.storyboard */,
 				C809CF3C24276F36003D02B4 /* Info.plist */,
 				C809CF3D24276F36003D02B4 /* main.m */,
+				C809CF3124276F2F003D02B4 /* ViewController.h */,
+				C809CF3224276F2F003D02B4 /* ViewController.m */,
+				C809CF442427775D003D02B4 /* RegisterViewController.h */,
+				C809CF452427775D003D02B4 /* RegisterViewController.m */,
+				C809CF4824278894003D02B4 /* MapViewController.h */,
+				C809CF4924278894003D02B4 /* MapViewController.m */,
+				C809CF4B24278D11003D02B4 /* MyAnnotation.h */,
+				C809CF4C24278D11003D02B4 /* MyAnnotation.m */,
+				C809CF47242784BC003D02B4 /* LatAndLonProtocol.h */,
 			);
 			path = RegisterAndLoginWithMap;
 			sourceTree = "<group>";
@@ -148,8 +160,10 @@
 			files = (
 				C809CF3324276F2F003D02B4 /* ViewController.m in Sources */,
 				C809CF2D24276F2F003D02B4 /* AppDelegate.m in Sources */,
+				C809CF4D24278D11003D02B4 /* MyAnnotation.m in Sources */,
+				C809CF4A24278894003D02B4 /* MapViewController.m in Sources */,
 				C809CF3E24276F36003D02B4 /* main.m in Sources */,
-				C809CF3024276F2F003D02B4 /* SceneDelegate.m in Sources */,
+				C809CF462427775D003D02B4 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,15 +1,11 @@
-//
-//  ViewController.h
-//  RegisterAndLoginWithMap
-//
-//  Created by ahmedpro on 3/22/20.
-//  Copyright © 2020 ahmedpro. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "RegisterViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <NSURLConnectionDelegate, NSURLConnectionDataDelegate, UIAlertViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *phoneTV;
+- (IBAction)login:(UIButton *)sender;
+- (IBAction)register:(UIButton *)sender;
 
 @end
 
